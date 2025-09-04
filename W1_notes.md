@@ -56,7 +56,7 @@ $$L(x,\mu,\lambda)=f(x)+\mu^T g(x) +\lambda^T h(x)$$
 
 - Stationary equation: it is similar to the previous formulation, when f(x) with constraints attain its optimum, the tangent of f point not only in the normal direction of $h(x)$ , but also in the outward of g(x) ( The direction of increase of g(x), since the region is defined by g(x)<=0, then outward). Therefore, if there exist an optimum, we need to have:
 
-  $\delta_x L =\delta f +\mu^T\delta g(x)+\lambda^T\delta h(x) =0$
+  $$\delta_x L =\delta f +\mu^T\delta g(x)+\lambda^T\delta h(x) =0$$
 
 - Primal feasibility: to respect constraints posed in the primal, we also need to have
 
