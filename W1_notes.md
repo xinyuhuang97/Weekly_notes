@@ -52,7 +52,7 @@ We can propagate this to the problem with inequality constraints :
 
 $\min f(x)$ subject to $g_i(x) \leq 0$ , $h_j(x)=0$ , and we set $\mu$ and $\lambda$ their Lagrangian multiplier vectors.  We pose
 
-$L(x,\mu,\lambda)=f(x)+\mu^T g(x) +\lambda^T h(x)$  
+$$L(x,\mu,\lambda)=f(x)+\mu^T g(x) +\lambda^T h(x)$$  
 
 - Stationary equation: it is similar to the previous formulation, when f(x) with constraints attain its optimum, the tangent of f point not only in the normal direction of $h(x)$ , but also in the outward of g(x) ( The direction of increase of g(x), since the region is defined by g(x)<=0, then outward). Therefore, if there exist an optimum, we need to have:
 
@@ -60,9 +60,9 @@ $L(x,\mu,\lambda)=f(x)+\mu^T g(x) +\lambda^T h(x)$
 
 - Primal feasibility: to respect constraints posed in the primal, we also need to have
 
-  $g_i(x)\leq0$
+  $$g_i(x)\leq0$$
 
-  $h(x)=0$ 
+  $$h(x)=0$$ 
 
 - Dual feasibility:
 
@@ -72,7 +72,7 @@ $L(x,\mu,\lambda)=f(x)+\mu^T g(x) +\lambda^T h(x)$
 
   $\delta f =-\mu^T\delta g(x)-\lambda^T\delta h(x)$, $-\mu^T\delta g(x)$ force the objective function to point inward.
 
-  From a duality pov, the dual problem is in fact $\max \min L(x,\mu,\lambda)$ , so if $\mu \leq 0$ , then as we know $g(x)\leq0$ , we have $\mu g(x)\geq 0$, which makes $L(x,\mu,\lambda)\geq f(x)$ , then the dual will not guaranteer a valid lower bound.
+  From a duality pov, the dual problem is in fact $\max \min L(x,\mu,\lambda)$ , so if $\mu \leq 0$ , then as we know $g(x)\leq0$ , we have $\mu g(x)\geq 0$, which makes $L(x,\mu,\lambda)\geq f(x)$ , then the dual will not guarantee a valid lower bound.
 
 - Complementary slackness
 
