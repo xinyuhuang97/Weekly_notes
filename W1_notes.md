@@ -30,7 +30,7 @@ proof on https://personal.math.ubc.ca/~anstee/math340/340complementaryslackness.
 
 **Concretely** !! If a constraint of the primal is strictly satisfied(slack), which means the corresponding $$(\sum_{j=1}^na_{ij}x_j-b_i)>0$$ therefore $y_i=0$.
 
-###<u>Notes</u> :
+### <u>Notes</u> :
 
 **<u>Lagrangian multiplier</u>** : 
 
