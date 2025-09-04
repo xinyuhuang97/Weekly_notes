@@ -18,7 +18,7 @@ $$c^Tx^{\star}= b^Ty^{\star}$$
 
 $$minf_0(x)$$ subject to $f_i(x)\leq0$ and $Ax=b$ , with $f_0$ and $f_i$ convex. In such a problem, if there exists a point $x^{\star}$, which means $f_i(x)<0 \forall i$ Then we say that it satisfies Slater's condition, and strong duality holds.
 
-**<u>Complementary slackness theorem</u> **: 
+**<u>Complementary slackness theorem</u>**: 
 
 Conditions: 
 
