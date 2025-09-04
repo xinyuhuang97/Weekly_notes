@@ -34,7 +34,7 @@ proof on https://personal.math.ubc.ca/~anstee/math340/340complementaryslackness.
 
 **<u>Lagrangian multiplier</u>** : 
 
-​	Consider $\min f(x)$ subject to $g(x)=0$ It means that f(x) is forced to move along the surface created by the constraint g(x)=0. When f(x) attains its optimum in this case, it means that it's tangent point in the normal direction of that surface, which makes it "unable" to move.-> therefore they are parallel $\delta f(x^*)||\delta g(x^*)$, this can be expressed with a constant $\lambda$ ->$ \delta f(x^{\star})+ \lambda\delta g(x^{\star})=0$ . $\lambda$ is called the Lagrangian multiplier
+​	Consider $\min f(x)$ subject to $g(x)=0$ It means that f(x) is forced to move along the surface created by the constraint g(x)=0. When f(x) attains its optimum in this case, it means that it's tangent point in the normal direction of that surface, which makes it "unable" to move.-> therefore they are parallel $\delta f(x^{\star})||\delta g(x^{\star})$, this can be expressed with a constant $\lambda$ ->$ \delta f(x^{\star})+ \lambda\delta g(x^{\star})=0$ . $\lambda$ is called the Lagrangian multiplier
 
 Remark-> Lagrangian multiplier therefore, can help us transform the constrained problem into an equivalent unconstrained problem.
 
