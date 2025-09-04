@@ -46,7 +46,7 @@ The necessary condition for an optimal solution of $L(x,\lambda)$ is therefore:
 
 - Stationary : $\delta_xL=\delta f+\lambda \delta g = 0$ 
 
-- Primal feasibility :$\delta_{\lambda}L=g(x) = 0$
+- Primal feasibility : $\delta_{\lambda}L=g(x) = 0$
 
 We can propagate this to the problem with inequality constraints :
 
