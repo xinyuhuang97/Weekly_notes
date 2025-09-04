@@ -12,7 +12,7 @@ $$c^T\bar{x}\geq b^T\bar{y}$$
 
 **<u>Strong duality</u>** is in contrast to weak duality, it states that in linear programming or under some conditions(Slater's condition) in convex optimization, the optimal solution for the primal problem and the dual problem is equal :
 
-$$c^Tx^{*}= b^Ty^{*}$$ 
+$$c^Tx^{\star}= b^Ty^{\star}$$ 
 
 **<u>Slater's condition</u>**: there exist **points in the relative interior of the domain** in a convex optimization problem
 
@@ -24,7 +24,7 @@ Conditions:
 
 $$(\sum_{j=1}^na_{ij}x_j-b_i)y_i=0$$
 
-$$(c_j-\sum^m_{i=1}a_{ji}*y_i)x_j=0$$ 
+$$(c_j-\sum^m_{i=1}a_{ji} y_i)x_j=0$$ 
 
 proof on https://personal.math.ubc.ca/~anstee/math340/340complementaryslackness.pdf
 
@@ -34,7 +34,7 @@ proof on https://personal.math.ubc.ca/~anstee/math340/340complementaryslackness.
 
 **<u>Lagrangian multiplier</u>** : 
 
-​	Consider $\min f(x)$ subject to $g(x)=0$ It means that f(x) is forced to move along the surface created by the constraint g(x)=0. When f(x) attains its optimum in this case, it means that it's tangent point in the normal direction of that surface, which makes it "unable" to move.-> therefore they are parallel $\delta f(x^*)||\delta g(x^*)$, this can be expressed with a constant $\lambda$ ->$ \delta f(x^*)+ \lambda\delta g(x^*)=0$ . $\lambda$ is called the Lagrangian multiplier
+​	Consider $\min f(x)$ subject to $g(x)=0$ It means that f(x) is forced to move along the surface created by the constraint g(x)=0. When f(x) attains its optimum in this case, it means that it's tangent point in the normal direction of that surface, which makes it "unable" to move.-> therefore they are parallel $\delta f(x^*)||\delta g(x^*)$, this can be expressed with a constant $\lambda$ ->$ \delta f(x^{\star})+ \lambda\delta g(x^{\star})=0$ . $\lambda$ is called the Lagrangian multiplier
 
 Remark-> Lagrangian multiplier therefore, can help us transform the constrained problem into an equivalent unconstrained problem.
 
