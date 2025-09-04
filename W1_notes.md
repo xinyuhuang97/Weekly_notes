@@ -12,7 +12,7 @@ $$c^T\bar{x}\geq b^T\bar{y}$$
 
 **<u>Strong duality</u>** is in contrast to weak duality, it states that in linear programming or under some conditions(Slater's condition) in convex optimization, the optimal solution for the primal problem and the dual problem is equal :
 
-$$c^Tx^*= b^Ty^*$$ 
+$$c^Tx^{*}= b^Ty^{*}$$ 
 
 **<u>Slater's condition</u>**: there exist **points in the relative interior of the domain** in a convex optimization problem
 
