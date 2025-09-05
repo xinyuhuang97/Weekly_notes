@@ -118,7 +118,7 @@ For a non basic variable (pairing) $x_j$, it's reduced cost is
 
 $$z(\delta)=c^T_B\bar{b}+\bar{c}_j$$
 
-$\bar{c}_j = c_j -c^T_BA^{-1}_BA_j$   
+$$\bar{c}_j = c_j -c^T_BA^{-1}_BA_j$$   
 
 Why do we want to know KKT? => KKT conditions are necessary for optimality in constrained optimization.
 
