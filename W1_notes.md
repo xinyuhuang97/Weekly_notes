@@ -78,11 +78,51 @@ $$L(x,\mu,\lambda)=f(x)+\mu^T g(x) +\lambda^T h(x)$$
 
   $\mu^Tg(x^*)=0$ ,this is introduced before. 
 
+**Reduced cost**
 
+For variable $x_j$ , its reduced cost is:
+
+$$\bar{c}_j=c_j-a^T_j y$$
+
+Where 
+
+- $c_j$ original cost coefficient of $x_j$ 
+- $a_j$ column of $A$ corresponding to variable $x_j$ 
+- $y$ optimal dual solution
+
+In air crew pairing problem :
+
+$\bar{c}_j=c_j -\pi a_j$ or $\bar{c}_j=c_j -\sum_i y^{\star}_i$
+
+- $c_j$ cost of the pairing
+- $\pi$ row vector of dual variable in an optimal dual solution
+- $a_j$ column associated with the pairing
+
+Understand the reduced cost from the *simplex method* 
+
+**Proof** 
+
+$Ax=b, A=[A_B,A_N], x^T=[x^T_B, x^T_N]$  where $x_B,x_N$ represents basic / nonbasic variables.
+
+$$A_B x_B +A_N x_N =b$$
+
+Multiplying by $A^{-1}_B$:
+
+$x_B = A^{-1}_Bb -A^{-1}_B A_N x_N=\bar{b}-\bar{A}_N x_N$ 
+
+$$c^Tx =c^T_B(\bar{b}-\bar{A}_Nx_N) +c^T_N x_N=c^T_B\bar{b} +(c^T_N -c^T_BA^{-1}_BA_N)x_N$$ 
+
+$c^T_BA^{-1}_Bb$ represent the cost of the current basic, the second term involves the reduced costs.
+
+For a non basic variable (pairing) $x_j$, it's reduced cost is  
+
+$$z(\delta)=c^T_B\bar{b}+\bar{c}_j$$
+
+$\bar{c}_j = c_j -c^T_BA^{-1}_BA_j$   
 
 Why do we want to know KKT? => KKT conditions are necessary for optimality in constrained optimization.
 
-If $x^*$ is an optimal solution and under some regularity conditions, then there exists multipliers such that KKT condition holds.
+If $x^*$ is an optimal solution and under some regularity conditions, then there exist multipliers such that KKT condition holds.
 
 Optimal solution + regularity conditions->KKT
 
