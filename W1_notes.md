@@ -1,6 +1,27 @@
 ## Week 1 
 
-### <u>Revision</u> 
+## <u>Duality</u> 
+
+### Primal problem 
+
+$$\min c^T x \quad s.t. Ax=b, x\geq0$$ 
+
+- $A\in R^{m\cdot n}$ constraint matrix
+- $b\in R^m$ right-hand side
+- $c\in R^n$ objective coefficients
+- $x\in R^n$ decision variables 
+
+### Dual problem 
+
+$$\max b^Ty \quad s.t. A^Ty\leq c$$
+
+- $y\in R^m$ dual variables
+
+$$A=[a_1,a_2,\cdots,a_n]$$
+
+Each column $a_j \in R^m$ corresponds to constraint coefficient of variable $x_j$ , so in constraint form:
+
+$$\sum_{j=1}^n a_jx_j=b$$ 
 
 **<u>Duality</u>**: In optimization, we consider a problem from two aspects. We have the primal problem and the dual problem.
 
@@ -76,7 +97,7 @@ $$L(x,\mu,\lambda)=f(x)+\mu^T g(x) +\lambda^T h(x)$$
 
 - Complementary slackness
 
-  $\mu^Tg(x^*)=0$ ,this is introduced before. 
+  $\mu^Tg(x^*)=0$ , this is introduced before. 
 
 **Reduced cost**
 
@@ -98,11 +119,34 @@ $\bar{c}_j=c_j -\pi a_j$ or $\bar{c}_j=c_j -\sum_i y^{\star}_i$
 - $\pi$ row vector of dual variable in an optimal dual solution
 - $a_j$ column associated with the pairing
 
+Understand the reduced cost from the constraint itself
+
+**Explanation**
+
+- $c_j$ is objective coefficient of $x_j$ 
+- $a^T_j y$ "value" of $x_j$ implied by the dual solution
+
+Dual constraints :
+
+$$a_j^Ty\leq c_j$$ 
+
+Therefore $\bar{c}_j \geq 0$  is dual feasibility.
+
+**When $\bar{c}_j <0$ :**
+
+It means that: $a^T_jy>c_j$ , the dual constraint is violated.
+
+**Interpretation** 
+
+- The implied value of $x_j$ is greater than its direct cost
+- In a min problem, this means that if we increase $x_j$, the objective value decreases - so $x_j$ is profitable to bring into the basis.
+- In simplex, $x_j$ is a good entering variable.
+
 Understand the reduced cost from the *simplex method* 
 
 **Proof** 
 
-$Ax=b, A=[A_B,A_N], x^T=[x^T_B, x^T_N]$  where $x_B,x_N$ represents basic / nonbasic variables.
+$Ax=b, A=[A_B,A_N], x^T=[x^T_B, x^T_N]$  where $x_B,x_N$ represents basic/nonbasic variables.
 
 $$A_B x_B +A_N x_N =b$$
 
@@ -114,7 +158,7 @@ $$c^Tx =c^T_B(\bar{b}-\bar{A}_Nx_N) +c^T_N x_N=c^T_B\bar{b} +(c^T_N -c^T_BA^{-1}
 
 $c^T_BA^{-1}_Bb$ represent the cost of the current basic, the second term involves the reduced costs.
 
-For a non basic variable (pairing) $x_j$, it's reduced cost is  
+For a non-basic variable (pairing) $x_j$, Its reduced cost is  
 
 $$z(\delta)=c^T_B\bar{b}+\bar{c}_j$$
 
