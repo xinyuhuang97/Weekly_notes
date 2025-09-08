@@ -53,3 +53,7 @@ Each primal variable gives a dual constraint: for each primal variable, take all
 - Therefore the constraint :
 
   ![fig_con23_primal_dual](./fig/fig_con23_primal_dual.png)
+
+### Finally the dual problem 
+
+![fig_dual_primal_dual](/Users/xinyuhuangmac/Google Drive/Notes_weekly/fig/fig_dual_primal_dual.png)
