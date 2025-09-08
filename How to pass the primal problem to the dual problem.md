@@ -12,7 +12,7 @@ In the primal, the objective includes terms with $y_p, s^+_i, s^-_i, w^A_k, w^B_
 
 For each primal constraint, a dual variable is generated:
 
-$u_i, z^A_k,z^B_k,\delta^1_{(p,q),k},\delta^2_{(p,q),k}, \delta^3_{(p,q),k},\gamma^y_p,\gamma^x_{(p,q),k}$
+$$u_i, z^A_k,z^B_k,\delta^1_{(p,q),k},\delta^2_{(p,q),k}, \delta^3_{(p,q),k},\gamma^y_p,\gamma^x_{(p,q),k}$$
 
 - (13) equality -> $u_i$ is free
 - (14)$\geq$ ->$z^A_k\leq0$
