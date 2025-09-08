@@ -4,7 +4,7 @@ Taken an example from the paper https://www.sciencedirect.com/science/article/pi
 
 
 
-### ![fig_primal_primal_dual](/Users/xinyuhuangmac/Google Drive/Notes_weekly/fig/fig_primal_primal_dual.png)STEP 1 Match Objective Terms
+### ![fig_primal_primal_dual](./fig/fig_primal_primal_dual.png)STEP 1 Match Objective Terms
 
 In the primal, the objective includes terms with $y_p, s^+_i, s^-_i, w^A_k, w^B_k$ , each of these variables will generate a dual constraint in the dual problem
 
@@ -52,4 +52,4 @@ Each primal variable gives a dual constraint: for each primal variable, take all
 
 - Therefore the constraint :
 
-  ![fig_con23_primal_dual](/Users/xinyuhuangmac/Google Drive/Notes_weekly/fig/fig_con23_primal_dual.png)
+  ![fig_con23_primal_dual](./fig/fig_con23_primal_dual.png)
