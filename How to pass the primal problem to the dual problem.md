@@ -15,8 +15,8 @@ For each primal constraint, a dual variable is generated:
 $$u_i, z^A_k,z^B_k,\delta^1_{(p,q),k},\delta^2_{(p,q),k}, \delta^3_{(p,q),k},\gamma^y_p,\gamma^x_{(p,q),k}$$
 
 - (13) equality -> $u_i$ is free
-- (14) $\geq$  ->$z^A_k\leq0$
-- (15)$\geq$->$z^B_k\leq0$ 
+- (14) $\geq$  -> $z^A_k\leq0$
+- (15)$\geq$-> $z^B_k\leq0$ 
 - (16)$\leq$ ->$\delta^1_{(p,q),k}\geq0$
 - (17)$\geq$ ->$\delta^2_{(p,q),k}\leq0$
 - (18)$\geq$ ->$\delta^3_{(p,q),k}\leq0$
