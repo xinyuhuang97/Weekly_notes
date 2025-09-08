@@ -56,4 +56,4 @@ Each primal variable gives a dual constraint: for each primal variable, take all
 
 ### Finally the dual problem 
 
-![fig_dual_primal_dual](/Users/xinyuhuangmac/Google Drive/Notes_weekly/fig/fig_dual_primal_dual.png)
+![fig_dual_primal_dual](./fig/fig_dual_primal_dual.png)
