@@ -1,3 +1,10 @@
+### Program 
+
+- Linear program: everything is linear
+- Quadratic program : quadratic objective function + linear constraints 
+- Non-linear Program : the objective or at least one of the functions involves is not linear in x
+- Combinatorial : the set of feasible solution is discrete-> (TSP,knapsack, graph...)
+
 ### variables
 
 - Decision variables
