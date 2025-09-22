@@ -74,11 +74,11 @@ $f_a(x)=f0(x)+a\mathbb{1}_{x=a}\quad \forall 0\leq a\leq 1$
 
 We have $\int^x_{-\infty}f_a(u)du = \int^x_{-\infty}f_0(u)du=1=F(x)$ as the alteration of countably many points do not affect the integral
 
-**Expected value ** $E(x)=\int_{x}xf_x(x)dx$  
+**Expected value** $E(x)=\int_{x}xf_x(x)dx$  
 
-**The k-th moment ** $E(x^k)=\int_xx^kf_x(x)^kdx$ 
+**The k-th moment** $E(x^k)=\int_xx^kf_x(x)^kdx$ 
 
-**Variance ** $V(X)=E(X^2)-E(X)^2$ 
+**Variance** $V(X)=E(X^2)-E(X)^2$ 
 
 #### Indpendent 
 
