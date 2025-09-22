@@ -271,7 +271,7 @@ $X$ is lognormal random variable if $X=e^{Y} \text{ for }Y\sim Normal(\mu,\sigma
 
 **Leibniz-rule** 
 
-![Lebniz](./fig/Lebniz_rule.png)
+![Lebniz](./fig/lebniz_rule.png)
 
 **cdf**
 
