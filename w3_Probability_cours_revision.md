@@ -196,10 +196,13 @@ $$Erlang(2,\lambda)$$
 
 $$f_X(x)=\lambda e^{-\lambda x} - (\lambda e^{-\lambda x} -\lambda^2 x e^{-\lambda x})=\lambda^2 x e^{-\lambda x}$$ 
 
-Sum of k independent rv : 
+Sum of \(k\) independent r.v.s:
+
 $$
 \frac{\lambda^{k} x^{k-1} e^{-\lambda x}}{(k-1)!}
 $$
+
+
 
 
 **Gamma Function** 
