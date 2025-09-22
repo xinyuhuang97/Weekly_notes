@@ -24,6 +24,8 @@ E.G.
 \frac{5}{9} & 0.12_{3} & 1\cdot 3^{-1} + 2\cdot 3^{-2} = \frac{5}{9}
 \end{array}
 \]
+
+
 <u>Relation to the Cantor set</u> 
 
 A point $x\in [0,1]$ is in the **Cantor set** iff its base-3 expansion
