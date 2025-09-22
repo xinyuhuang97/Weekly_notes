@@ -93,9 +93,11 @@ if two variables are independent, then
 $U(x_u,x_o)$ uniform random variable over $[x_u, x_o]$ 
 
 **PDF** :
+
+PDF:
+
 $$
-\text{Since we have }
-P(a\le X\le a+\delta)
+\text{Since } P(a\le X\le a+\delta)
    = P(b\le X\le b+\delta),
 \quad
 \text{the density must be constant on } [x_u,x_o].
@@ -103,23 +105,26 @@ $$
 
 $$
 1 = F(x_o) - F(x_u)
-   = \int_{x_u}^{x_o} c \, du
+   = \int_{x_u}^{x_o} c\,du
    = c(x_o - x_u)
-   \quad\Rightarrow\quad
-   f(u)
-     = \mathbb{1}_{\{x_u\le u\le x_o\}}
-       \frac{1}{x_o - x_u}
+\qquad\Rightarrow\qquad
+f(u)
+   = \mathbb{1}_{\{x_u \le u \le x_o\}}
+     \frac{1}{x_o - x_u}
 $$
 
 $$
-E\big[ U(x_u,x_o) \big]
+E\big[U(x_u,x_o)\big]
    = \int_{x_u}^{x_o}
-       u \cdot \mathbb{1}_{\{x_u\le u\le x_o\}}
-       \frac{1}{x_o - x_u}\, du
+        u\;
+        \mathbb{1}_{\{x_u \le u \le x_o\}}
+        \frac{1}{x_o - x_u}\,du
+   = \frac{u^2}{2(x_o-x_u)}
+       \Big|_{x_u}^{x_o}
    = \frac{x_o + x_u}{2}
 $$
 
-$$E(U(x_u,x_o))&=\int^{x_o}_{x_u}u\cdot\mathbb{1}_{x_u\leq u\leq x_o}\frac{1}{x_0-x_u}d_u\\&=\frac{u^2}{2(x_0-x_u)}|^{x_o}_{x_u}=\frac{x_o+x_u}{2}$$
+
 
 **Exponential random variable** 
 
