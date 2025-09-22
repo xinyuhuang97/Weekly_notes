@@ -39,7 +39,7 @@ is the standard way of assigning a **length/area/volumne** to sets in $\mathbb{R
 
 Given a set $E\subseteq \mathbb{R}$, it's outer Lebesgue measure is :
 
-$$m^{\star}(E)=\inf \{\sum^{\infin}_{k=1}(b_k-a_k):E\subseteq(a_k,b_k)$$
+$$m^{\star}(E)=\inf \{\sum^{\infin}_{k=1}(b_k-a_k):E\subseteq(a_k,b_k)\}$$
 
 => cover $E$ by countably many open intervals, add up their lengths, and take the infimum over all covers.
 
