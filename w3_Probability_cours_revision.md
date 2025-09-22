@@ -253,7 +253,7 @@ $\mathbb{E}(x)=\int^1_0 x\cdot \frac{x^{\alpha-1}(1-x)^{\lambda-1}}{B(\alpha,\la
 
 We have the expected value of probability of success is :
 
-$$\frac{\alpha}{\alpha+\lambda}=\frac{\text{nb\_successes}+1}{\text{nb\_trials}+2}\neq \frac{\text{nb\_successes}}{\text{nb\_trials}}$$
+$$\frac{\alpha}{\alpha+\lambda}=\frac{\text{nbsuccesses}+1}{\text{nbtrials}+2}\neq \frac{\text{nbsuccesses}}{\text{nbtrials}}$$
 
 
 
