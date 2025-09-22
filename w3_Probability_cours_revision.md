@@ -6,7 +6,7 @@ The set is built start from the interval [0,1].
 2. From each of those, remove their middle third:
 3. Repeat forever
 
-**Base-3** /ternary: way of writing numbers - like decimal(base-10)/binary(base-2)
+**Base-3**\/ternary: way of writing numbers - like decimal(base-10)/binary(base-2)
 
 Ann non-negative real x can be written as 
 
@@ -42,7 +42,7 @@ is the standard way of assigning a **length/area/volumne** to sets in $\mathbb{R
 
 Given a set $E\subseteq \mathbb{R}$, it's outer Lebesgue measure is :
 
-$$m^{\star}(E)=\infty\{\sum^{\infin}_{k=1}(b_k-a_k):E\subseteq(a_k,b_k)\}$$
+$$m^{\star}(E)=\infty\{\sum^{\infty}_{k=1}(b_k-a_k):E\subseteq(a_k,b_k)\}$$
 
 => cover $E$ by countably many open intervals, add up their lengths, and take the infimum over all covers.
 
@@ -196,8 +196,10 @@ $$Erlang(2,\lambda)$$
 
 $$f_X(x)=\lambda e^{-\lambda x} - (\lambda e^{-\lambda x} -\lambda^2 x e^{-\lambda x})=\lambda^2 x e^{-\lambda x}$$ 
 
-Sum of k independent rv :$\frac{\lambda^k x^{k-1} e^{-\lambda x}}{(k-1)!}$
-
+Sum of k independent rv : 
+$$
+\frac{\lambda^{k} x^{k-1} e^{-\lambda x}}{(k-1)!}
+$$
 **Gamma Function** 
 
 Sum of $\alpha$ independent $Expo(\lambda)$ has a distribution parameterized by $(\alpha, \lambda)$ 
