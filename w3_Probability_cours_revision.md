@@ -13,17 +13,15 @@ Ann non-negative real x can be written as
 $$x=d_0d_1d_2...$$(Base 3) , which means that :
 
 $$x=d_03^0+d_13^{-1}+...$$ 
-
-
-\[
+$$
 \begin{array}{lll}
-\text{number (decimal)} & \text{base-3} & \text{check} \\[2pt]
-5 & 12_{3} & 1\cdot 3^{1} + 2\cdot 3^{0} = 5 \\[2pt]
-\frac{1}{3} & 0.1_{3} & 1\cdot 3^{-1} = \frac{1}{3} \\[2pt]
-\frac{2}{9} & 0.02_{3} & 0\cdot 3^{-1} + 2\cdot 3^{-2} = \frac{2}{9} \\[2pt]
+\text{number (decimal)} & \text{base-3} & \text{check} \\[4pt]
+5 & 12_{3} & 1\cdot 3^{1} + 2\cdot 3^{0} = 5 \\[4pt]
+\frac{1}{3} & 0.1_{3} & 1\cdot 3^{-1} = \frac{1}{3} \\[4pt]
+\frac{2}{9} & 0.02_{3} & 0\cdot 3^{-1} + 2\cdot 3^{-2} = \frac{2}{9} \\[4pt]
 \frac{5}{9} & 0.12_{3} & 1\cdot 3^{-1} + 2\cdot 3^{-2} = \frac{5}{9}
 \end{array}
-\]
+$$
 
 
 <u>Relation to the Cantor set</u> 
