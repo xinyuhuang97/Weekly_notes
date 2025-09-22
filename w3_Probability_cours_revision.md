@@ -15,11 +15,11 @@ $$x=d_0d_1d_2...$$(Base 3) , which means that :
 $$x=d_03^0+d_13^{-1}+...$$ 
 $$
 \begin{array}{lll}
-\text{number (decimal)} & \text{base-3} & \text{check} \\[4pt]
-5 & 12_{3} & 1\cdot 3^{1} + 2\cdot 3^{0} = 5 \\[4pt]
-\frac{1}{3} & 0.1_{3} & 1\cdot 3^{-1} = \frac{1}{3} \\[4pt]
-\frac{2}{9} & 0.02_{3} & 0\cdot 3^{-1} + 2\cdot 3^{-2} = \frac{2}{9} \\[4pt]
-\frac{5}{9} & 0.12_{3} & 1\cdot 3^{-1} + 2\cdot 3^{-2} = \frac{5}{9}
+\text{number} & \text{base-3} & \text{check}\\
+5 & 12_{3} & 1\cdot 3^{1}+2\cdot 3^{0}=5\\
+\frac{1}{3} & 0.1_{3} & 1\cdot 3^{-1}=\frac{1}{3}\\
+\frac{2}{9} & 0.02_{3} & 0\cdot 3^{-1}+2\cdot 3^{-2}=\frac{2}{9}\\
+\frac{5}{9} & 0.12_{3} & 1\cdot 3^{-1}+2\cdot 3^{-2}=\frac{5}{9}
 \end{array}
 $$
 
