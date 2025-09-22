@@ -210,3 +210,73 @@ $$
 Sum of $\alpha$ independent $Expo(\lambda)$ has a distribution parameterized by $(\alpha, \lambda)$ 
 
 $$f_X(x)=\frac{\lambda e^{-\lambda x}(\lambda x)^{\alpha-1}}{\Gamma(\alpha)}$$ 
+
+We define the Gamma Function as:
+
+$$\Gamma(n)=\int^{\infty}_0 x^{n-1}e^{-x}dx$$
+
+Then we have :
+
+$$\Gamma(n+1)=\int^{\infty}_0x^ne^{-x}dx=x^{n-1}(-e^{-x})|^{+\infty}_0 +\int^{\infty}_0 nx^{n-1}e^{-x}dx=0+nT(n)$$
+
+$$\Gamma(1)=1, \Gamma(2)=1\cdot\Gamma(1)=1$$
+
+$$\Gamma(3)=2, \Gamma(4)=3\cdot 2$$
+
+$$\Gamma(n)=(n-1)!$$ 
+
+$$\Gamma(\frac{1}{2})^2 =\pi$$ 
+
+
+
+**Beta Function** 
+
+$$B(m,k)=\int^1_0 u^{m-1}(1-u)^{k-1}du=\int^1_0u^{k-1}(1-u)^{m-1}du=B(k,m)$$
+
+- $B(k,m)=\frac{\Gamma(k)\Gamma(m)}{\Gamma(k+m)}$
+
+**Prior** : starting guess/background knowledge
+
+**LIkelyhood** : how well each p explained the observed outcome
+
+**Posterior**: what you believe after seeing the data
+
+$$\text{Posterior}(p)=\frac{\text{Prior}(p)\times \text{Likelihood}(p) }{\text{Evidence}}$$ 
+
+![Beta](./fig/Beta_proof.png)
+
+Therefore, we have Beta random variable:
+
+$$f_X(x)=\frac{x^{\alpha-1}(1-x)^{\lambda-1}}{B(\alpha,\lambda)}, \text{for } 0\leq x\leq1, \alpha,\lambda>0$$ ->Beta rv with a-1 successes and $\lambda -1$ failures
+
+$\mathbb{E}(x)=\int^1_0 x\cdot \frac{x^{\alpha-1}(1-x)^{\lambda-1}}{B(\alpha,\lambda)}= \frac{B(\alpha+1,\lambda)}{B(\alpha,\lambda)}= \frac{\Gamma(\alpha +1)\Gamma(\lambda)\Gamma(\alpha+\lambda)}{\Gamma(\alpha+1+\lambda)\Gamma(\alpha)\Gamma(\lambda)}=\frac{\alpha}{\alpha+\lambda}$  
+
+We have the expected value of probability of success is :
+
+$$\frac{\alpha}{\alpha+\lambda}=\frac{\text{nb\_successes}+1}{\text{nb\_trials}+2}\neq \frac{\text{nb\_successes}}{\text{nb\_trials}}$$
+
+
+
+### Normal distribution 
+
+$$f_X(x)=\frac{1}{\sqrt{2\pi}\sigma }e^{\frac{-(x-\mu)^2}{2\sigma^2}}$$
+
+$$\mathbb{E}(x)=\mu$$ 
+
+If $X$ is $Normal(\mu,\sigma^2)$ ,$aX+b \sim Normal(a\mu+b,a^2\sigma^2)$
+
+### Lognormal Random Variable
+
+$X$ is lognormal random variable if $X=e^{Y} \text{ for }Y\sim Normal(\mu,\sigma^2)$ 
+
+**Leibniz-rule** 
+
+![Lebniz](./fig/Lebniz_rule.png)
+
+**cdf**
+
+$$P(X\leq x)=P(Y\leq ln x)=\int^{lnx}_{-\infty}\frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{(y-u)^2}{2\sigma^2}}dy$$
+
+**pdf**
+
+$$f_X(x)=\frac{d}{dx}P((X\leq x))=\frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{(lnx-u)^2}{2\sigma^2}}\frac{1}{x}$$=
