@@ -200,6 +200,8 @@ Sum of k independent rv :
 $$
 \frac{\lambda^{k} x^{k-1} e^{-\lambda x}}{(k-1)!}
 $$
+
+
 **Gamma Function** 
 
 Sum of $\alpha$ independent $Expo(\lambda)$ has a distribution parameterized by $(\alpha, \lambda)$ 
