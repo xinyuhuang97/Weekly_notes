@@ -15,6 +15,8 @@ $$x=d_0d_1d_2...$$(Base 3) , which means that :
 $$x=d_03^0+d_13^{-1}+...$$ 
 
 E.G. 
+
+
 $$
 \text{number/decimal}\quad \text{base-3}\quad \text{check}\\
 5 \quad 12_3 \quad 1*3 +2 =5\\
@@ -104,7 +106,7 @@ $X$ is said to be exponentially distributed with **rate parameter** $\lambda>0$ 
 
 $$X\sim Exp(\lambda) \quad f_X(x)=\lambda e^{-\lambda x}, x\geq0; 0 \text{ ow.}$$
 
-A random variable $X$ take values between $0$ and $\infin$, the probability of $X$ being in any subintevak if $[a,a+\sigma]$ decrease exponentially as $a$ increases
+A random variable $X$ take values between $0$ and $\infty$, the probability of $X$ being in any subintevak if $[a,a+\sigma]$ decrease exponentially as $a$ increases
 
 **CDF** 
 
@@ -124,7 +126,7 @@ Therefore, we have also:
 
 $$\mathbb{E}(x)=\int^{\infty}_0 xf_X(x)dx=-x(1-F_X(x))|^{\infty}_0-\int^{\infty}_0(F_X(x)-1)dx$$ 
 
-And the first part $-x(1-F_X(x))|^{\infin}_0$ converge to 0 as x increases, therefore:
+And the first part $-x(1-F_X(x))|^{\infty}_0$ converge to 0 as x increases, therefore:
 
 $$\mathbb{E}(x)=\int^{\infty}_0(1-F_X(x))dx$$ 
 
