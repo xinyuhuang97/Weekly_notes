@@ -39,7 +39,7 @@ is the standard way of assigning a **length/area/volumne** to sets in $\mathbb{R
 
 Given a set $E\subseteq \mathbb{R}$, it's outer Lebesgue measure is :
 
-$$m^{\star}(E)=\inf \{\sum^{\infin}_{k=1}(b_k-a_k):E\subseteq(a_k,b_k)\}$$
+$$m^{\star}(E)=\infty\{\sum^{\infin}_{k=1}(b_k-a_k):E\subseteq(a_k,b_k)\}$$
 
 => cover $E$ by countably many open intervals, add up their lengths, and take the infimum over all covers.
 
@@ -59,7 +59,7 @@ $$F(a)=P(X\leq a)$$
 
 And we often derive a density, which is the PDF:
 
-$$F(x)=\int^x_{-\infin}f(t)d_t$$
+$$F(x)=\int^x_{-\infty}f(t)d_t$$
 
 **However**,  a given **F** doesn't determine *f* uniquely:
 
@@ -69,7 +69,7 @@ We can generate similar functions:
 
 $f_a(x)=f0(x)+a\mathbb{1}_{x=a}\quad \forall 0\leq a\leq 1$
 
-We have $\int^x_{-\infin}f_a(u)du = \int^x_{-\infin}f_0(u)du=1=F(x)$ as the alteration of countably many points do not affect the integral
+We have $\int^x_{-\infty}f_a(u)du = \int^x_{-\infty}f_0(u)du=1=F(x)$ as the alteration of countably many points do not affect the integral
 
 **Expected value ** $E(x)=\int_{x}xf_x(x)dx$  
 
@@ -116,21 +116,21 @@ $$f_x(X)=\lambda e^{-\lambda x}$$ for x>=0
 
 ## How to calculate the expectation of non-negative random variable
 
-$$\mathbb{E}(x)=\int^{\infin}_0 xf_X(x)dx$$
+$$\mathbb{E}(x)=\int^{\infty}_0 xf_X(x)dx$$
 
 By applying the integration by parts method, we set: $u = x, dv=f_X(x)dx$ 
 
 Therefore, we have also:
 
-$$\mathbb{E}(x)=\int^{\infin}_0 xf_X(x)dx=-x(1-F_X(x))|^{\infin}_0-\int^{\infin}_0(F_X(x)-1)dx$$ 
+$$\mathbb{E}(x)=\int^{\infty}_0 xf_X(x)dx=-x(1-F_X(x))|^{\infty}_0-\int^{\infty}_0(F_X(x)-1)dx$$ 
 
 And the first part $-x(1-F_X(x))|^{\infin}_0$ converge to 0 as x increases, therefore:
 
-$$\mathbb{E}(x)=\int^{\infin}_0(1-F_X(x))dx$$ 
+$$\mathbb{E}(x)=\int^{\infty}_0(1-F_X(x))dx$$ 
 
 As we have $F_X(x)=1-e^{-\lambda x}$
 
-$$\mathbb{E}(x)=\int^{\infin}_0e^{-\lambda x}dx=0-(-\frac{1}{\lambda})=\frac{1}{\lambda}$$  
+$$\mathbb{E}(x)=\int^{\infty}_0e^{-\lambda x}dx=0-(-\frac{1}{\lambda})=\frac{1}{\lambda}$$  
 
 $\mathbb{E}(x^2)=\frac{2}{\lambda}$
 
