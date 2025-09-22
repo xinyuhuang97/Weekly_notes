@@ -14,7 +14,7 @@ $$x=d_0d_1d_2...$$(Base 3) , which means that :
 
 $$x=d_03^0+d_13^{-1}+...$$ 
 
-E.G. 
+
 \[
 \begin{array}{lll}
 \text{number (decimal)} & \text{base-3} & \text{check} \\[2pt]
