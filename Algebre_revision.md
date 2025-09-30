@@ -39,26 +39,21 @@ An orthogonal matrix :
 
 
 $$
-I = Q^\top Q =
-\begin{pmatrix}
+\left(
+\begin{array}{c}
 Q_1^\top\\
 Q_2^\top\\
 \vdots\\
 Q_{n-1}^\top\\
 Q_n^\top
-\end{pmatrix}
-\begin{pmatrix}
+\end{array}
+\right)
+\left(
+\begin{array}{c|c|c|c|c}
 Q_1 & Q_2 & \cdots & Q_{n-1} & Q_n
-\end{pmatrix}
-=
-\begin{pmatrix}
-Q_1^\top Q_1 & Q_1^\top Q_2 & \cdots & Q_1^\top Q_n\\
-Q_2^\top Q_1 & Q_2^\top Q_2 & \cdots & Q_2^\top Q_n\\
-\vdots       & \vdots       & \ddots & \vdots\\
-Q_n^\top Q_1 & Q_n^\top Q_2 & \cdots & Q_n^\top Q_n
-\end{pmatrix}.
+\end{array}
+\right)
 $$
-
 **Hermitian matrix** 
 
 A complex square matix eauls to it's own conjugate-transpose:
