@@ -114,18 +114,18 @@ Equivalently, $A$ has an orthonormal basis of eigenvectors.
 1. **Existence of a real eigenpair (Rayleigh–Ritz).**
    Consider the Rayleigh quotient on the unit sphere:
 
-   
-   $$
-   R(x)=\frac{x^\top A x}{x^\top x},\quad \|x\|=1.
-   $$
+    
+
+      $$R(x)=\frac{x^\top A x}{x^\top x},\quad \|x\|=1.$$
+
    
 
    The sphere is compact and $R$ is continuous, so a maximizer $v$ exists with $\|v\|=1$. Using Lagrange multipliers for
 
    
-   $$
-   \max x^\top A x\quad\text{s.t.}\quad x^\top x=1,
-   $$
+
+      $$\max x^\top A x\quad\text{s.t.}\quad x^\top x=1,$$
+
    
 
    gives
