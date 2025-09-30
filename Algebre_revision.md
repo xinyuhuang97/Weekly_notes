@@ -168,7 +168,7 @@ Equivalently, $A$ has an orthonormal basis of eigenvectors.
 
    
 
-      $$Q^\top A Q=\operatorname{diag}(\lambda,\mu_2,\dots,\mu_n).$$
+      $$Q^\top A Q=diag(\lambda,\mu_2,\dots,\mu_n).$$
 
    This completes the induction. $\square$ 
 
@@ -207,9 +207,11 @@ $$
 So the PSD conditions come directly from requiring:
 
 
-$$
-a \geq 0, \quad ab - c^2 \geq 0.
-$$
+
+   $$a \geq 0, \quad ab - c^2 \geq 0.$$
+
+
+
 For PD instead, you’d require:
 
 
@@ -232,8 +234,8 @@ a is the minimum of $S$ if
 
 Define $T=\{t\in \mathbb{R}|t\leq s \quad \forall s \in S\}$
 
-- If $T=\empty$, we say that the infimum of $S$ is $-\infty$ 
-- If $T\neq \empty$, we say that $a$ is the infimum of $S$ 
+- If $T=\emptyset$, we say that the infimum of $S$ is $-\infty$ 
+- If $T\neq \emptyset$, we say that $a$ is the infimum of $S$ 
   - $a\in T$ 
   - $a \geq t \quad \forall t \in T$    
 
@@ -259,7 +261,7 @@ $S$ an arbitrary set in $\mathbb{R}^n$
 
 $int(S)$, a point $x$ is in the interior of $S$, if 
 
-- $\exist\epsilon \geq0 \quad N_{{\epsilon}}(x) \subset S$
+- $\exists \epsilon \geq0 \quad N_{{\epsilon}}(x) \subset S$
 - if open if $S=int(S)$
 
 **Boundary**
