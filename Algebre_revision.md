@@ -19,6 +19,8 @@ Therefore is $det(M)=0$ This equivalent doesn't hold anymore.
 #### Spectral Theorem
 
 Let $A\in \mathbb{R}^{m\times n}$ be a symmetric matrix (with distinct eigenvalues) $\lambda_1,\cdots,\lambda_n$ , then there exists an orthogonal matrix $Q$ such that 
+
+
 \[
 Q^\top A Q =
 \begin{pmatrix}
