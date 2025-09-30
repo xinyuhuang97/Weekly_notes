@@ -1,4 +1,4 @@
-**Rank–nullity:** $\dim V=\operatorname{rank}(T)+\dim(\ker T)$.
+**Rank–nullity:** $\dim V=rank(T)+\dim(\ker T)$.
 
 $kerA=\{x:Ax=0\}.$=> non space
 
@@ -100,7 +100,7 @@ Let $\lambda_{min}\leq \cdots\leq \lambda_{max}$ be eigenvalues of $A$
    a convex combination of eigenvalues.
 
 **Spectral Theorem (real symmetric)**
- If $A\in\mathbb{R}^{n\times n}$ is symmetric ($A^\top=A$), then there exists an orthogonal matrix $Q$ and a real diagonal matrix $\Lambda=\operatorname{diag}(\lambda_1,\dots,\lambda_n)$ such that
+ If $A\in\mathbb{R}^{n\times n}$ is symmetric ($A^\top=A$), then there exists an orthogonal matrix $Q$ and a real diagonal matrix $\Lambda=diag(\lambda_1,\dots,\lambda_n)$ such that
 $$
 Q^\top A Q=\Lambda.
 $$
@@ -190,3 +190,136 @@ For PD instead, you’d require:
 $$
 a > 0, \quad ab - c^2 > 0.
 $$
+
+## Convex optimization
+
+Given $S \subseteq \mathbb{R}$
+
+**Minumum/maximum**
+
+a is the minimum of $S$ if 
+
+- $a \in S$ 
+- $a\leq s\quad \forall s\in S$
+
+**Infimum/suppremum** 
+
+Define $T=\{t\in \mathbb{R}|t\leq s \quad \forall s \in S\}$
+
+- If $T=\empty$, we say that the infimum of $S$ is $-\infty$ 
+- If $T\neq \empty$, we say that $a$ is the infimum of $S$ 
+  - $a\in T$ 
+  - $a \geq t \quad \forall t \in T$    
+
+**Neighbourhood** 
+
+$\forall x\in \mathbb{R}^n,\forall \epsilon \geq 0$
+
+$$N_{\epsilon}(x)=\{y\in\mathbb{R}^n||y-x|\leq\epsilon\}$$
+
+is a $\epsilon$-neighbourhood of x.
+
+**Closure**
+
+$S$ an arbitrary set in $\mathbb{R}^n$ 
+
+- A point x is in the **closure** of S $cl(S)$, denoted by cl(S), if 
+
+  $$S \cap \N_{\epsilon}(x)\neq \empty, \forall \epsilon>0$$
+
+- if closed if $S=cl(S)$ 
+
+**Interior** 
+
+$int(S)$, a point $x$ is in the interior of $S$, if 
+
+- $\exist\epsilon \geq0 \quad N_{{\epsilon}}(x) \subset S$
+- if open if $S=int(S)$
+
+**Boundary**
+
+A point $x$ is on the boundary  of $S,\quad \partial(S)$ if 
+
+$ S \cap N_{{\epsilon}}(x)\neq \empty$ and $\bar{S} \cap N_{\epsilon}(x)\neq \empty \quad \forall \epsilon>0$
+
+- Possible that the boundary of S contains no elements of S
+
+**Theoreme** 
+
+A set $S \subseteq R^n$ is closed iid for any convergent sequence of points $\{x_j\}^{\infty}_{k=1}$ contained in S then 
+
+Some rules
+
+- S is closed iff $\partial{{S}} \subseteq S$
+
+- S is open iff $\partial(S)\subseteq \bar{S}$
+
+- S can be neither closed nor open.
+
+- If $x\in S$, then $x\in int(S)$ or $x\in \partial(S)$ 
+
+- A set $S$ is bounded if there exist $\epsilon \ge 0$ and $x\in \mathbb{R}^n$such that 
+
+  $$S \subseteq N_{\epsilon}(x)$$
+
+- A set $S$ is compact if S both bounded and closed
+
+
+
+### Weiestrass Theorem 
+
+Let $S$ be a subset of $\mathbb{R}^n$ which is closed and bounded. Let $f:S->\mathbb{R}$ a continuous function on S. Then the problem $\min{f(x), x\in S}$ attains its minimum.
+
+
+
+**Polyhedron** 
+
+**Cone** 
+
+**Convex cone**
+
+Let $C$ be a cone. Then $C$ is convex iif $x+y\in C \quad \forall x,y \in C$
+
+**Convex hull/envelope convex** 
+
+- The convex hull is the smallest convex set containning S
+
+Convex combination
+
+Affine combination (drop the nonnegativity)
+
+Linear combination(drop the nonnegativity and sum equals to 1)
+
+Conic combination (drop the sum equals to 1)
+
+! conic hull is the smallest convex cone containing S.
+
+**Polytope** 
+
+The convex hull of a finite number of points in $S={x^{(1)},\cdots, x^{(k)}}$ is called a polytope
+
+Polytope is polyhedron 
+
+Polyhedron not necessarily polytope ->unbounded polyhedron
+
+**Linear independent** 
+
+**Affine independent** 
+
+**Carathéodory's Theorem**
+
+Let $S \subseteq \mathbb{R}^n$ . Then $\forall x \in con(S)$, There exists $x_1,x_2\cdots,x_p$, where $p\leq n+1$ such that $x\in con{x_1,\cdots x_p}$
+
+
+
+
+
+
+
+
+
+ 
+
+ 
+
+ 
