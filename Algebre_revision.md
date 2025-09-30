@@ -268,7 +268,7 @@ $int(S)$, a point $x$ is in the interior of $S$, if
 
 A point $x$ is on the boundary  of $S,\quad \partial(S)$ if 
 
-$ S \cap N_{{\epsilon}}(x)\neq \emptyset$ and $\bar{S} \cap N_{\epsilon}(x)\neq \emptyset \quad \forall \epsilon>0$
+$S \cap N_{{\epsilon}}(x)\neq \emptyset$ and $\bar{S} \cap N_{\epsilon}(x)\neq \emptyset \quad \forall \epsilon>0$
 
 - Possible that the boundary of S contains no elements of S
 
@@ -286,7 +286,7 @@ Some rules
 
 - If $x\in S$, then $x\in int(S)$ or $x\in \partial(S)$ 
 
-- A set $S$ is bounded if there exist $\epsilon \ge 0$ and $x\in \mathbb{R}^n$such that 
+- A set $S$ is bounded if there exist $\epsilon \ge 0$ and $x\in \mathbb{R}^n$ such that 
 
   $$S \subseteq N_{\epsilon}(x)$$
 
