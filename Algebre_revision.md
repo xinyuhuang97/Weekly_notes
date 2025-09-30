@@ -54,6 +54,8 @@ Q_1 & Q_2 & \cdots & Q_{n-1} & Q_n
 \end{array}
 \right)
 $$
+
+
 **Hermitian matrix** 
 
 A complex square matix eauls to it's own conjugate-transpose:
