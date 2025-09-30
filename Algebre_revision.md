@@ -112,40 +112,62 @@ Equivalently, $A$ has an orthonormal basis of eigenvectors.
 **Inductive step.** Assume the claim holds for $(n-1)\times(n-1)$. Let $A\in\mathbb{R}^{n\times n}$ be symmetric.
 
 1. **Existence of a real eigenpair (Rayleigh–Ritz).**
-    Consider the Rayleigh quotient on the unit sphere:
+   Consider the Rayleigh quotient on the unit sphere:
+
+   
    $$
    R(x)=\frac{x^\top A x}{x^\top x},\quad \|x\|=1.
    $$
+   
+
    The sphere is compact and $R$ is continuous, so a maximizer $v$ exists with $\|v\|=1$. Using Lagrange multipliers for
+
+   
    $$
    \max x^\top A x\quad\text{s.t.}\quad x^\top x=1,
    $$
+   
+
    gives
+
+   
    $$
    \nabla(x^\top A x)=\lambda\,\nabla(x^\top x)\ \Longrightarrow\ 2Ax=2\lambda x
    \ \Longrightarrow\ Av=\lambda v.
    $$
+   
+
    Thus $v$ is an eigenvector and $\lambda=R(v)\in\mathbb{R}$.
 
 2. **Orthogonal complement is invariant.**
-    Let $W:=v^\perp=\{w\in\mathbb{R}^n:\ v^\top w=0\}$. For any $w\in W$,
+   Let $W:=v^\perp=\{w\in\mathbb{R}^n:\ v^\top w=0\}$. For any $w\in W$,
+
+   
    $$
    v^\top(Aw)=(A^\top v)^\top w=(Av)^\top w=(\lambda v)^\top w=\lambda\,v^\top w=0,
    $$
+   
+
    hence $Aw\in W$. So $A$ restricts to a symmetric linear map $A|_W:W\to W$ with $\dim W=n-1$.
 
 3. **Diagonalize on $W$ by induction.**
-    By the induction hypothesis, there is an **orthonormal** eigenbasis $\{u_2,\dots,u_n\}\subset W$ with
+   By the induction hypothesis, there is an **orthonormal** eigenbasis $\{u_2,\dots,u_n\}\subset W$ with
+
+   
    $$
    A u_i=\mu_i u_i\quad (i=2,\dots,n).
    $$
 
 4. **Assemble an orthonormal eigenbasis of $\mathbb{R}^n$.**
-    Set $u_1:=v$. Then $\{u_1,\dots,u_n\}$ is orthonormal, and
+   Set $u_1:=v$. Then $\{u_1,\dots,u_n\}$ is orthonormal, and
+
+   
    $$
    Au_1=\lambda u_1,\qquad Au_i=\mu_i u_i\ (i=2,\dots,n).
    $$
    Let $Q=[\,u_1\ \cdots\ u_n\,]$. Since the columns are orthonormal, $Q^\top Q=I$, and
+
+   
    $$
    Q^\top A Q=\operatorname{diag}(\lambda,\mu_2,\dots,\mu_n).
    $$
@@ -171,6 +193,8 @@ For an $n \times n$ matrix:
 - … and so on up to the full matrix.
 
 For example, for
+
+
 $$
 A = \begin{pmatrix}
 a & c \\
@@ -182,10 +206,14 @@ $$
 - The **second leading principal minor** is $\det(A) = ab - c^2$.
 
 So the PSD conditions come directly from requiring:
+
+
 $$
 a \geq 0, \quad ab - c^2 \geq 0.
 $$
 For PD instead, you’d require:
+
+
 $$
 a > 0, \quad ab - c^2 > 0.
 $$
@@ -224,7 +252,7 @@ $S$ an arbitrary set in $\mathbb{R}^n$
 
 - A point x is in the **closure** of S $cl(S)$, denoted by cl(S), if 
 
-  $$S \cap \N_{\epsilon}(x)\neq \empty, \forall \epsilon>0$$
+  $$S \cap \mathbb{N}_{\epsilon}(x)\neq \emptyset, \forall \epsilon>0$$
 
 - if closed if $S=cl(S)$ 
 
@@ -239,7 +267,7 @@ $int(S)$, a point $x$ is in the interior of $S$, if
 
 A point $x$ is on the boundary  of $S,\quad \partial(S)$ if 
 
-$ S \cap N_{{\epsilon}}(x)\neq \empty$ and $\bar{S} \cap N_{\epsilon}(x)\neq \empty \quad \forall \epsilon>0$
+$ S \cap N_{{\epsilon}}(x)\neq \emptyset$ and $\bar{S} \cap N_{\epsilon}(x)\neq \emptyset \quad \forall \epsilon>0$
 
 - Possible that the boundary of S contains no elements of S
 
