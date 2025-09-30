@@ -96,9 +96,13 @@ Let $\lambda_{min}\leq \cdots\leq \lambda_{max}$ be eigenvalues of $A$
 
 **Spectral Theorem (real symmetric)**
  If $A\in\mathbb{R}^{n\times n}$ is symmetric ($A^\top=A$), then there exists an orthogonal matrix $Q$ and a real diagonal matrix $\Lambda=diag(\lambda_1,\dots,\lambda_n)$ such that
+
+
 $$
 Q^\top A Q=\Lambda.
 $$
+
+
 Equivalently, $A$ has an orthonormal basis of eigenvectors.
 
 **Proof (by induction on $n$).**
