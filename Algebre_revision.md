@@ -38,31 +38,26 @@ where $\lambda_1,\lambda_2,\cdots,\lambda_n$ are the (real) eigenvalues of matri
 An orthogonal matrix :
 
 
-
-$$I = Q^\top Q =
-\left(
-\begin{array}{c}
-Q_1^\top\\ \hline
-Q_2^\top\\ \hline
-\vdots\\ \hline
-Q_{n-1}^\top\\ \hline
+$$
+I = Q^\top Q =
+\begin{pmatrix}
+Q_1^\top\\
+Q_2^\top\\
+\vdots\\
+Q_{n-1}^\top\\
 Q_n^\top
-\end{array}
-\right)
-\left(
-\begin{array}{c@{\;\big|\;}c@{\;\big|\;}c@{\;\big|\;}c@{\;\big|\;}c}
+\end{pmatrix}
+\begin{pmatrix}
 Q_1 & Q_2 & \cdots & Q_{n-1} & Q_n
-\end{array}
-\right)\\
+\end{pmatrix}
 =
 \begin{pmatrix}
-Q_1^\top Q_1 & Q_1^\top Q_2 & \cdots & Q_1^\top Q_{n-1} & Q_1^\top Q_n\\
-Q_2^\top Q_1 & Q_2^\top Q_2 & \cdots & Q_2^\top Q_{n-1} & Q_2^\top Q_n\\
-\vdots       & \vdots       & \ddots & \vdots           & \vdots\\
-Q_{n-1}^\top Q_1 & Q_{n-1}^\top Q_2 & \cdots & Q_{n-1}^\top Q_{n-1} & Q_{n-1}^\top Q_n\\
-Q_n^\top Q_1 & Q_n^\top Q_2 & \cdots & Q_n^\top Q_{n-1} & Q_n^\top Q_n
-\end{pmatrix}.$$
-
+Q_1^\top Q_1 & Q_1^\top Q_2 & \cdots & Q_1^\top Q_n\\
+Q_2^\top Q_1 & Q_2^\top Q_2 & \cdots & Q_2^\top Q_n\\
+\vdots       & \vdots       & \ddots & \vdots\\
+Q_n^\top Q_1 & Q_n^\top Q_2 & \cdots & Q_n^\top Q_n
+\end{pmatrix}.
+$$
 
 **Hermitian matrix** 
 
