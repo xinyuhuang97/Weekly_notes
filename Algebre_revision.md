@@ -131,10 +131,10 @@ Equivalently, $A$ has an orthonormal basis of eigenvectors.
    gives
 
    
-   $$
-   \nabla(x^\top A x)=\lambda\,\nabla(x^\top x)\ \Longrightarrow\ 2Ax=2\lambda x
-   \ \Longrightarrow\ Av=\lambda v.
-   $$
+
+      $$\nabla(x^\top A x)=\lambda\,\nabla(x^\top x)\ \Longrightarrow\ 2Ax=2\lambda x
+   \ \Longrightarrow\ Av=\lambda v.$$ 
+
    
 
    Thus $v$ is an eigenvector and $\lambda=R(v)\in\mathbb{R}$.
@@ -143,9 +143,9 @@ Equivalently, $A$ has an orthonormal basis of eigenvectors.
    Let $W:=v^\perp=\{w\in\mathbb{R}^n:\ v^\top w=0\}$. For any $w\in W$,
 
    
-   $$
-   v^\top(Aw)=(A^\top v)^\top w=(Av)^\top w=(\lambda v)^\top w=\lambda\,v^\top w=0,
-   $$
+
+      $$v^\top(Aw)=(A^\top v)^\top w=(Av)^\top w=(\lambda v)^\top w=\lambda\,v^\top w=0,$$
+
    
 
    hence $Aw\in W$. So $A$ restricts to a symmetric linear map $A|_W:W\to W$ with $\dim W=n-1$.
@@ -154,23 +154,22 @@ Equivalently, $A$ has an orthonormal basis of eigenvectors.
    By the induction hypothesis, there is an **orthonormal** eigenbasis $\{u_2,\dots,u_n\}\subset W$ with
 
    
-   $$
-   A u_i=\mu_i u_i\quad (i=2,\dots,n).
-   $$
+
+      $$A u_i=\mu_i u_i\quad (i=2,\dots,n).$$
 
 4. **Assemble an orthonormal eigenbasis of $\mathbb{R}^n$.**
    Set $u_1:=v$. Then $\{u_1,\dots,u_n\}$ is orthonormal, and
 
    
-   $$
-   Au_1=\lambda u_1,\qquad Au_i=\mu_i u_i\ (i=2,\dots,n).
-   $$
+
+      $$Au_1=\lambda u_1,\qquad Au_i=\mu_i u_i\ (i=2,\dots,n).$$
+
    Let $Q=[\,u_1\ \cdots\ u_n\,]$. Since the columns are orthonormal, $Q^\top Q=I$, and
 
    
-   $$
-   Q^\top A Q=\operatorname{diag}(\lambda,\mu_2,\dots,\mu_n).
-   $$
+
+      $$Q^\top A Q=\operatorname{diag}(\lambda,\mu_2,\dots,\mu_n).$$
+
    This completes the induction. $\square$ 
 
    
