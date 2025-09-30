@@ -36,6 +36,9 @@ where $\lambda_1,\lambda_2,\cdots,\lambda_n$ are the (real) eigenvalues of matri
 **Proof by induction** 
 
 An orthogonal matrix :
+
+
+
 $$I = Q^\top Q =
 \left(
 \begin{array}{c}
