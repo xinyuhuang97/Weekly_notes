@@ -36,8 +36,7 @@ where $\lambda_1,\lambda_2,\cdots,\lambda_n$ are the (real) eigenvalues of matri
 **Proof by induction** 
 
 An orthogonal matrix :
-\[
-I = Q^\top Q =
+$$I = Q^\top Q =
 \left(
 \begin{array}{c}
 Q_1^\top\\ \hline
@@ -59,8 +58,7 @@ Q_2^\top Q_1 & Q_2^\top Q_2 & \cdots & Q_2^\top Q_{n-1} & Q_2^\top Q_n\\
 \vdots       & \vdots       & \ddots & \vdots           & \vdots\\
 Q_{n-1}^\top Q_1 & Q_{n-1}^\top Q_2 & \cdots & Q_{n-1}^\top Q_{n-1} & Q_{n-1}^\top Q_n\\
 Q_n^\top Q_1 & Q_n^\top Q_2 & \cdots & Q_n^\top Q_{n-1} & Q_n^\top Q_n
-\end{pmatrix}.
-\]
+\end{pmatrix}.$$
 
 
 **Hermitian matrix** 
