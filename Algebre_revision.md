@@ -21,16 +21,16 @@ Therefore is $det(M)=0$ This equivalent doesn't hold anymore.
 Let $A\in \mathbb{R}^{m\times n}$ be a symmetric matrix (with distinct eigenvalues) $\lambda_1,\cdots,\lambda_n$ , then there exists an orthogonal matrix $Q$ such that 
 
 
-\[
-Q^\top A Q =
+
+$$Q^\top A Q =
 \begin{pmatrix}
 \lambda_1 & 0        & \cdots & 0        & 0 \\
 0         & \lambda_2& \cdots & 0        & 0 \\
 \vdots    & \vdots   & \ddots & \vdots   & \vdots \\
 0         & 0        & \cdots & \lambda_{n-1} & 0 \\
 0         & 0        & \cdots & 0        & \lambda_n
-\end{pmatrix}
-\]
+\end{pmatrix}$$
+
 where $\lambda_1,\lambda_2,\cdots,\lambda_n$ are the (real) eigenvalues of matrix A.
 
 **Proof by induction** 
