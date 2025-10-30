@@ -298,7 +298,11 @@ Some rules
 
 Let $S$ be a subset of $\mathbb{R}^n$ which is closed and bounded. Let $f:S->\mathbb{R}$ a continuous function on S. Then the problem $\min{f(x), x\in S}$ attains its minimum.
 
+**Bolzano-Weierstrass Theorem** 
 
+Every bounded sequence has a convergent subsequence.
+
+![Weiestrass_proof](./fig/Weiestrass_proof.png)
 
 **Polyhedron** 
 
@@ -307,6 +311,10 @@ Let $S$ be a subset of $\mathbb{R}^n$ which is closed and bounded. Let $f:S->\ma
 **Convex cone**
 
 Let $C$ be a cone. Then $C$ is convex iif $x+y\in C \quad \forall x,y \in C$
+
+**Question** : why convexity is not represent as $\lambda x +(1-\lambda)y$ here?
+
+**Answer** : as cones has the scalarity property, therefore proof is straight-forward using this and convexity.
 
 **Convex hull/envelope convex** 
 
@@ -322,6 +330,10 @@ Conic combination (drop the sum equals to 1)
 
 ! conic hull is the smallest convex cone containing S.
 
+**Polyhedron** 
+
+A polyherdon $P$ is any set in $\mathbb{R}^n$ that can be represented as the intersection of half-spaces. I.e, P is a polyhedron if there exists $A\in \mathbb{R}^{m\times n}$, $b \in \mathbb{R}^n$ such that $P=\{x\in \mathbb{R}^n| Ax \leq b \}$ . 
+
 **Polytope** 
 
 The convex hull of a finite number of points in $S={x^{(1)},\cdots, x^{(k)}}$ is called a polytope
@@ -329,6 +341,8 @@ The convex hull of a finite number of points in $S={x^{(1)},\cdots, x^{(k)}}$ is
 Polytope is polyhedron 
 
 Polyhedron not necessarily polytope ->unbounded polyhedron
+
+**Tips** : they are associated through Minkowski's theorem
 
 **Linear independent** 
 
